@@ -6,16 +6,6 @@ import { useState } from 'react';
 export default function ListTodo({ todo, id, handleEdit, handleDelete, handleSaveTodo,editButton,setEditButton }) {
     const [editItem, setEditItem] = useState(todo.name)
     
-    
-    // const saveHandle = (id) => {
-    //     handleEdit(id)
-    //     console.log('hello')
-    //     if (editItem) {
-    //         handleSaveTodo(editItem, id)
-    //     } else {
-    //         setEditItem(todo.name)
-    //     }
-    // }
     const saveButton = (id) => {
         handleEdit(id)
         if (editItem) {

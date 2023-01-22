@@ -44,9 +44,9 @@ export default function AddTodoList() {
                             handleEdit={handleEdit} handleDelete={handleDelete} handleSaveTodo={handleSaveTodo}
                             editButton={editButton} setEditButton={setEditButton} />   
                     ))
-                    }    
+                }    
             </ListGroup> 
             <DeleteAllTodo setTodos={setTodos} />
     </>
-            )
+    )
 }
